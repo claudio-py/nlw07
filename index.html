@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Business card</title>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="avatar">
-               <span>
-                   <img src="./assets/build.svg" alt="">
-                </span>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="./assets/build.svg" alt="" />
+          </span>
 
-                <img src="https://picsum.photos/185/185" alt="">
-            </div>
-        
-        <h1>Claudio Daniel</h1>
-        <a href="#">
-            <img src="./assets/github.svg" alt="">
-            claudio-py</a>
-        <p>jr web developer</p>
+          <img id="userPic" src="https://picsum.photos/185/185" alt="" />
         </div>
-        <ul >
-            <li><a href="#"><img src="./assets/linkedin.svg" alt=""></a></li>
-            <li><a href="#"><img src="./assets/facebook.svg" alt=""></a></li>
+
+        <h1 id="userName">Claudio Daniel</h1>
+        <a id="userLink" href="#">
+          <img src="./assets/github.svg" alt="" />
+          <span id="userLogin">usuário</span></a
+        >
+        <p id="userBio">jr web developer</p>
+      </div>
+      <ul id="socialLinks" >
+        <li class="linkedin">
+          <a href="#"><img src="./assets/linkedin.svg" alt="" /></a>
+        </li>
+        <!-- <li><a href="#"><img src="./assets/facebook.svg" alt=""></a></li>
             <li><a href="#"><img src="./assets/instagram.svg" alt=""></a></li>
-            <li><a href="#"><img src="./assets/twitter.svg" alt=""></a></li>
-        </ul>
+            <li><a href="#"><img src="./assets/twitter.svg" alt=""></a></li> -->
+      </ul>
     </main>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

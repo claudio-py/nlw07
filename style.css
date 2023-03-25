@@ -26,13 +26,15 @@ body {
 }
 
 main {
-  background: url(./assets/Mobile.svg);
-  width: 37.5rem;
-  height: 81.2rem;
+  background: url(./assets/Mobile.svg) no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
+  min-height: 80rem;
 }
 
 .container {
   max-width: 25rem;
+
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -75,11 +77,11 @@ a {
 
 .container a img {
 
-  width: 1.6rem;
-  height: 1.6rem;
-  background: rgb(128, 128, 128);
+  width: 2rem;
+  height: 2rem;
+  background: rgb(183, 180, 180);
   border-radius: 50%;
-
+  border: 1px solid black;
 }
 
 p {
@@ -94,4 +96,30 @@ ul {
   display: flex;
   gap: 0.8rem;
   justify-content: center;
+}
+
+@media(min-width:540px) {
+  main {
+    background: url(./assets/Desktop.svg) no-repeat center/cover;
+
+
+    background-color: black;
+  }
+}
+
+@media(min-height:1020px) {
+  .container {
+    margin-top: 30rem;
+  }
+}
+
+@media(min-width:2000px) {
+  :root {
+    font-size: 100%;
+  }
+
+  #socialLinks img {
+    width: 3rem;
+    height: auto;
+  }
 }
